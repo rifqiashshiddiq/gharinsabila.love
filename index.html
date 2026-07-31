@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wedding of Gharin & Sabila</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== WELCOME SCREEN + TIRAI ===================== -->
+<div class="welcome-screen" id="welcomeScreen">
+  <div class="curtain-panel curtain-left" id="curtainLeft"></div>
+  <div class="curtain-panel curtain-right" id="curtainRight"></div>
+  <div class="curtain-valance"></div>
+
+  <div class="welcome-content" id="welcomeContent">
+    <div class="welcome-block" id="welcomeGreetBlock">
+      <div class="welcome-eyebrow">Kepada Yth.</div>
+      <div class="welcome-guest" id="welcomeGuestName">Bapak/Ibu/Saudara/i</div>
+      <div class="welcome-msg">Anda diundang ke pernikahan</div>
+      <div class="welcome-names">Gharin &amp; Sabila</div>
+    </div>
+
+    <div class="welcome-block welcome-instruction" id="welcomeInstructionBlock">
+      Ketuk bagian yang bersinar untuk<br>menjelajahi undangan ✨
+    </div>
+
+    <div class="welcome-countdown" id="welcomeCountdown"></div>
+  </div>
+
+  <button class="welcome-skip" id="welcomeSkip">Lewati ➜</button>
+</div>
+
+<!-- ===================== HALAMAN UTAMA / HERO ===================== -->
+<div class="hero-stage">
+  <img class="hero-bg" src="assets/hero-bg.jpg" alt="The Wedding of Gharin & Sabila">
+
+  <!-- Hotspot ditumpuk pas di atas papan pada ilustrasi -->
+  <button class="hotspot" id="hotspot-our-journey" aria-label="Our Journey"></button>
+  <button class="hotspot" id="hotspot-groom" aria-label="The Groom"></button>
+  <button class="hotspot" id="hotspot-bride" aria-label="The Bride"></button>
+  <button class="hotspot" id="hotspot-eventinfo" aria-label="Event Info"></button>
+  <button class="hotspot" id="hotspot-location" aria-label="Location"></button>
+  <button class="hotspot" id="hotspot-gallery" aria-label="Gallery"></button>
+  <button class="hotspot" id="hotspot-rsvp" aria-label="RSVP"></button>
+</div>
+
+<!-- ===================== POPUP KONTEN ===================== -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-frame" id="popupFrame">
+    <!-- konten popup di-generate lewat js/script.js -->
+  </div>
+</div>
+
+<script src="js/welcome.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
